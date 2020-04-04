@@ -1,0 +1,9 @@
+subprojects {
+    ext {
+        activemqVersion = "5.15.0"
+    }
+
+    dependencies {
+        implementation("org.apache.activemq:activemq-client:${activemqVersion}")
+    }
+}
