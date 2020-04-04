@@ -5,3 +5,6 @@ include 'activemq-example:hello-world'
 
 // guava-example
 include 'guava-example:guava-demo1'
+
+// java8
+include('java8-example:java8-lambda')
