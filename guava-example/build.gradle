@@ -1,0 +1,9 @@
+subprojects {
+    ext {
+        guavaVersion = "23.0"
+    }
+
+    dependencies {
+        implementation("com.google.guava:guava:${guavaVersion}")
+    }
+}

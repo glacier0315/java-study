@@ -2,3 +2,6 @@ rootProject.name = 'java-study'
 
 // activemq-example
 include 'activemq-example:hello-world'
+
+// guava-example
+include 'guava-example:guava-demo1'
