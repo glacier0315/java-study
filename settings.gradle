@@ -13,6 +13,9 @@ include('java8-example:java8-lambda')
 include 'jersey-example:hello-webapp'
 include 'jersey-example:hello-jfinal-webapp'
 
+// word2pdf
+include 'word2pdf:doc-converter'
+include 'word2pdf:docx2pdf'
 
 // spring-boot-example
 include 'spring-boot-example:spring-boot-jersey-1'
