@@ -8,3 +8,7 @@ include 'guava-example:guava-demo1'
 
 // java8
 include('java8-example:java8-lambda')
+
+// jersey-example
+include 'jersey-example:hello-webapp'
+include 'jersey-example:hello-jfinal-webapp'

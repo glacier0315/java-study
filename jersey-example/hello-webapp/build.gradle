@@ -1,0 +1,18 @@
+apply plugin: 'war'
+//apply plugin: 'jetty'
+
+dependencies {
+    compile("javax.servlet:javax.servlet-api:${servletVersion}")
+//    compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+    compile("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:${jacksonVersion}")
+
+    testCompile("org.eclipse.jetty:jetty-webapp:${jettyVersion}")
+}
+
+//jettyRun {
+//    //rootDir = "src/main/webapp"
+//    httpPort = 80 // 服务端口，可自定义
+//    reload = "automatic" // 当代码重新编译时，系统会自动重载
+//    scanIntervalSeconds = 1
+//    contextPath = ''
+//}

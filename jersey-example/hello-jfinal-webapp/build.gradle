@@ -1,0 +1,26 @@
+apply plugin: 'war'
+apply plugin: 'com.bmuschko.tomcat'
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.1'
+    }
+}
+
+dependencies {
+    compile("com.jfinal:jfinal:${jfinalVersion}")
+    compile("com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:${jacksonVersion}")
+
+    providedCompile("javax.servlet:javax.servlet-api:${servletVersion}")
+
+    def tomcatVersion = '7.0.59'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+
