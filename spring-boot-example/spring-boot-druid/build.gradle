@@ -1,0 +1,6 @@
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    implementation("com.alibaba:druid:${druidVersion}")
+    implementation("mysql:mysql-connector-java")
+}

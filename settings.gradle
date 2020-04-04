@@ -12,3 +12,14 @@ include('java8-example:java8-lambda')
 // jersey-example
 include 'jersey-example:hello-webapp'
 include 'jersey-example:hello-jfinal-webapp'
+
+
+// spring-boot-example
+include 'spring-boot-example:spring-boot-jersey-1'
+include 'spring-boot-example:spring-boot-chapter-1'
+include 'spring-boot-example:spring-boot-web-thymeleaf'
+include 'spring-boot-example:spring-boot-office-to-pdf'
+include 'spring-boot-example:spring-boot-web-freemarker'
+include 'spring-boot-example:spring-boot-actuator'
+include 'spring-boot-example:spring-boot-druid'
+include 'spring-boot-example:spring-boot-mybatis-plus'

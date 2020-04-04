@@ -1,0 +1,7 @@
+debug: true
+
+## log
+logging:
+  level:
+    root: DEGUG
+  path: logs

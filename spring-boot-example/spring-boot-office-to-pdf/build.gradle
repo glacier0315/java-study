@@ -1,0 +1,20 @@
+ext {
+    xdocreportVerion = "1.0.6"
+    jsoupVersion = "1.10.3"
+    coreRendererVersion="R8"
+    itextVersion="4.2.2"
+}
+
+dependencies {
+    implementation fileTree(dir: 'lib', include: ['*.jar'])
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation(
+            "commons-io:commons-io:${commonsIoVersion}",
+            "org.apache.poi:poi:${poiVersion}",
+            "org.apache.poi:poi-ooxml:${poiVersion}",
+            "org.jsoup:jsoup:${jsoupVersion}",
+            "org.xhtmlrenderer:core-renderer:${coreRendererVersion}",
+            "com.lowagie:itext:${itextVersion}"
+    )
+}
