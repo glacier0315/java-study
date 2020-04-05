@@ -1,3 +1,8 @@
+ext {
+    druidVersion = '1.1.18'
+    mybatisPlusVersion = '3.3.1.tmp'
+}
+
 dependencies {
     // 本地依赖
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -8,7 +13,7 @@ dependencies {
     )
 
     implementation(
-            "com.baomidou:mybatis-plus-boot-starter:3.3.1.tmp",
+            "com.baomidou:mybatis-plus-boot-starter:${mybatisPlusVersion}",
             "com.alibaba:druid-spring-boot-starter:${druidVersion}"
     )
 

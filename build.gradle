@@ -1,31 +1,7 @@
-plugins {
-    id "org.springframework.boot" version "2.1.13.RELEASE" apply(false)
-    id "com.arenagod.gradle.MybatisGenerator" version "1.4" apply(false)
-}
 // 配置所有项目公有
 allprojects {
     group = 'com.glacier'
     version = '0.0.1'
-
-    ext {
-        springBootVersion = "2.1.13.RELEASE"
-        springCloudAlibabaVersion = "2.1.1.RELEASE"
-        springCloudVersion = "Greenwich.SR3"
-        mybatisGeneratorVersion = "1.4"
-
-        swaggerVersion = '2.9.2'
-        mybatisBootVersion = '2.1.0'
-        druidVersion = '1.1.18'
-        pageHelperVersion = "1.2.12"
-        jacksonVersion = "2.9.9.3"
-        lombokVersion = "1.18.12"
-        oauth2Version = "2.1.9.RELEASE"
-        jjwtVersion = "0.9.1"
-        hutoolVersion = "5.1.2"
-        mybatisPlusVersion = "3.3.1.tmp"
-        kaptchaVersion = "1.1.0"
-        springBootAdminVersion = "2.1.6"
-    }
 
     // 指定仓库
     repositories {
@@ -47,6 +23,11 @@ subprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
+    ext {
+        lombokVersion = "1.18.12"
+        junitVersion = "4.12"
+    }
+
     dependencies {
         // lombok
         compileOnly "org.projectlombok:lombok:${lombokVersion}"
@@ -55,7 +36,7 @@ subprojects {
         testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
         testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
         // 配置junit 4 单元测试
-        testImplementation "junit:junit:4.12"
+        testImplementation "junit:junit:${junitVersion}"
     }
 
     // 设置编码为UTF-8
@@ -78,7 +59,6 @@ subprojects {
             it.mkdirs()
         }
     }
-
     // 拷贝jar包
     task copyJars(type:Copy) {
         from configurations.compile // 编译   runtime 执行
