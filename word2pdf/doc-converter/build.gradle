@@ -1,0 +1,8 @@
+dependencies {
+    implementation fileTree(dir:'lib',include:['*.jar'])
+
+    implementation (
+            "org.jodconverter:jodconverter-core:${jodconverterCoreVersion}",
+            "net.sf.jacob-project:jacob:${jacobVersion}"
+    )
+}

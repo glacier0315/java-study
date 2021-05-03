@@ -9,3 +9,7 @@
 
 rootProject.name = 'java-study'
 include('lambda:demo1')
+
+// word2pdf
+include('word2pdf:doc-converter')
+include('word2pdf:docx2pdf')

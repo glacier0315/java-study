@@ -1,0 +1,14 @@
+subprojects{
+    ext {
+        docx4jVersion = "3.3.5"
+        docx4jExportFoVersion = "3.3.1"
+        xdocreportVersion = "1.0.6"
+        jacobVersion = "1.14.3"
+        itextpdfVersion = "5.5.11"
+        poiVersion = "3.16"
+        jodconverterCoreVersion = "4.0.0-RELEASE"
+        commonsIoVersion = "2.5"
+        ooxmlSchemasVersion = "1.3"
+    }
+}
+

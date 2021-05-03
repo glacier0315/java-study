@@ -1,0 +1,17 @@
+dependencies {
+    implementation fileTree(dir:'lib',include:['*.jar'])
+
+    implementation ("org.docx4j:docx4j:${docx4jVersion}")
+    implementation ("org.docx4j:docx4j-export-fo:${docx4jExportFoVersion}") {
+        exclude module: "commons-io"
+    }
+
+    implementation("org.apache.poi:poi-ooxml:${poiVersion}")
+
+    implementation("com.itextpdf:itextpdf:${itextpdfVersion}")
+
+    implementation("fr.opensagres.xdocreport:org.apache.poi.xwpf.converter.pdf:${xdocreportVersion}")
+    implementation("org.apache.poi:ooxml-schemas:${ooxmlSchemasVersion}")
+
+    implementation("commons-io:commons-io:${commonsIoVersion}")
+}
