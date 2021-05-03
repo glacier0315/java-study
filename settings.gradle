@@ -14,5 +14,6 @@ include('lambda:demo1')
 include('word2pdf:doc-converter')
 include('word2pdf:docx2pdf')
 
-
 include('guava:demo1')
+
+include('activemq:demo1')
