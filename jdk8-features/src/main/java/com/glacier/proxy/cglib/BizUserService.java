@@ -1,27 +1,25 @@
-package com.glacier.proxy.jdk.impl;
+package com.glacier.proxy.cglib;
 
 import com.glacier.domain.User;
 import com.glacier.domain.builder.UserBuilder;
-import com.glacier.proxy.jdk.UserService;
 
 import java.time.LocalDate;
 
 /**
- * date 2021-06-03 17:30
+ * date 2021-06-04 09:39
  *
  * @author glacier
  * @version 1.0
  */
-public class UserServiceImpl implements UserService {
+public class BizUserService {
     /**
      * 查找
      *
      * @param id
      * @return
      */
-    @Override
     public User findById(String id) {
-        System.out.println("调用 UserServiceImpl findById方法，参数是：\t" + id);
+        System.out.println("调用 BizUserService findById方法，参数是：\t" + id);
         return UserBuilder.anUser()
                 .id("1")
                 .name("张三")
